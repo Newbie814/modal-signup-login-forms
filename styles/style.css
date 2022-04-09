@@ -232,6 +232,78 @@ p {
 .btn:active {
   transform: translateY(0);
 }
+
+/* ===================  signUp Form =============================== */
+
+.modal {
+  width: 400px;
+  background: linear-gradient(
+      to right,
+      rgba(12, 24, 48, 0.445) 0%,
+      22.3300963640213%,
+      rgba(252, 231, 154, 0.26) 44.6601927280426%,
+      72.3300963640213%,
+      rgba(227, 84, 12, 0.281) 100%
+    ),
+    url('https://res.cloudinary.com/dylvkdabj/image/upload/v1649477171/website%20pics%20family/greece2_bg7vxe.jpg')
+      center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 50px 0;
+}
+
+.x-btn {
+  position: absolute;
+  font-size: 50px;
+  top: -20px;
+  right: 10px;
+  padding: 10px;
+  color: var(--clr-orange-2);
+  cursor: pointer;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.form-header h1 {
+  font-family: var(--ff-secondary);
+  font-weight: 300;
+  font-size: 3rem;
+  color: var(--clr-orange-2);
+}
+
+.form-header h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 250px;
+  padding: 15px 15px 15px 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+input::placeholder {
+  color: #fff;
+}
 /* ----------------------------end project styling ---------------------------- */
 @media screen and (min-width: 992px) {
   .section-center {

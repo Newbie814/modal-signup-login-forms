@@ -339,6 +339,11 @@ input::placeholder {
   color: #fff;
 }
 
+.form-btn-container {
+  height: 115px;
+  margin-top: 25px;
+}
+
 .form-btn {
   width: 125px;
   color: #fff;

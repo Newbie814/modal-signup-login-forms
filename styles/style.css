@@ -139,13 +139,10 @@ p {
 /* --------------------------------project styling ---------------------------- */
 .text-experiment {
   background-color: #0c1830;
-  background-image: linear-gradient(
-    to right,
-    #0c1830 0%,
-    22.3300963640213%,
-    #fce69a 44.6601927280426%,
-    72.3300963640213%,
-    #e3530c 100%
+  background: linear-gradient(
+    90deg,
+    rgba(250, 254, 253, 1) 50%,
+    rgb(0, 0, 0) 100%
   );
 
   background-size: 100%;
@@ -211,11 +208,18 @@ p {
 
   border: none;
   color: var(--clr-primary-2);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 .login-btn {
   background-color: #f25c05;
+}
+.login-btn:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  border: 2px solid var(--clr-orange-2);
+  color: #000;
+  font-weight: 700;
 }
 
 .signUp-btn {
@@ -223,6 +227,10 @@ p {
   color: hsl(209, 61%, 16%);
   border: 2px solid var(--clr-orange-2);
   font-weight: 700;
+}
+.signUp-btn:hover {
+  background-color: var(--clr-orange-2);
+  color: #fff;
 }
 
 .btn:hover {
@@ -239,7 +247,7 @@ p {
   width: 400px;
   background: linear-gradient(
       to right,
-      rgba(12, 24, 48, 0.445) 0%,
+      rgba(12, 24, 48, 0.253) 0%,
       22.3300963640213%,
       rgba(252, 231, 154, 0.26) 44.6601927280426%,
       72.3300963640213%,
@@ -254,8 +262,14 @@ p {
   transform: translate(-50%, -50%);
   border-radius: 20px;
   padding: 50px 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
+.display-form {
+  opacity: 1;
+  visibility: visible;
+}
 .x-btn {
   position: absolute;
   font-size: 50px;
@@ -290,6 +304,7 @@ p {
 
 .input-group {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .input-group input {
@@ -298,11 +313,46 @@ p {
   border: none;
   outline: none;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.678);
 }
 
 input::placeholder {
   color: #fff;
+}
+
+.form-btn {
+  width: 125px;
+  color: #fff;
+  background-color: var(--clr-orange-2);
+  border: none;
+
+  padding: 10px 5px;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+  font-family: var(--ff-secondary);
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-btn:hover {
+  transform: translateY(-2px);
+  border: 2px solid var(--clr-orange-2);
+  background-color: transparent;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form-btn:active {
+  transform: translateY(0);
+}
+.input-group i {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  font-size: 18px;
+  color: #aaa;
 }
 /* ----------------------------end project styling ---------------------------- */
 @media screen and (min-width: 992px) {
